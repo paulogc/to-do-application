@@ -3,7 +3,7 @@ import defaultTheme from "./default";
 
 const getTheme = () => {
   if (process.browser) {
-    const isDarkTheme = localStorage.getItem("isDarkTheme");
+    const isDarkTheme = localStorage.getItem("isDarkTheme") === "true";
 
     if (isDarkTheme) return darkTheme;
 
